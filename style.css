@@ -1,14 +1,38 @@
 h2 {
   font-weight: 700;
-  color: #0d6efd;
-}
-
-.card img {
-  height: 180px;
-  object-fit: cover;
+  color:#FF5733;
 }
 /*Explication
 
 Met les titres en bleu + gras.
 
 Ajuste les images pour qu’elles gardent un bon cadrage.*/
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+ /* 1. Définir la hauteur fixe du conteneur de la diapositive */
+#heroSlider .carousel-item {
+  height: 700px; /* Définissez la hauteur désirée (ici 300px) */
+}
+
+/* 2. Forcer l'image à remplir cet espace sans déformation */
+#heroSlider .carousel-item img {
+  width: 100%;           /* L'image prend 100% de la largeur du conteneur */
+  height: 100%;          /* L'image prend 100% de la hauteur du conteneur (300px) */
+  object-fit: cover;     /* TRÈS IMPORTANT : Garantit que l'image couvre la zone, coupant les bords si nécessaire, au lieu de la déformer. */
+}
+.navbar-custom {
+  background-color: #FF5733 !important; /* Votre code couleur hexadécimal */
+}
+/* Fichier: style.css */
+
+/* Définir une nouvelle classe pour la couleur bleue désirée */
+.text-prix-bleu {
+  color: #0d6efd; 
+}
+.btn{
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
